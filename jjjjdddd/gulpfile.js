@@ -11,6 +11,10 @@ gulp.task("copycsan", done => {
   gulp.src("css/*.css").pipe(gulp.dest("dist/css")).pipe(connect.reload());
   done();
 })
+gulp.task("copyjs", done => {
+  gulp.src("js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());
+  done();
+})
 gulp.task("copyimg", done => {
   gulp.src("img/*.{jpg,png}").pipe(gulp.dest("dist/img")).pipe(connect.reload());
   done();
@@ -36,6 +40,7 @@ gulp.task("server", done => {
 gulp.task("watch", done => {
   gulp.watch("*.html", gulp.series("copyHtml"));
   gulp.watch("css/*.css", gulp.series("copycsan"));
+  gulp.watch("js/*.js", gulp.series("copyjs"));
   gulp.watch("img/*.{png,jpg}", gulp.series("copyimg"));
   gulp.watch("sass/*.scss", gulp.series("sass"));
   done();
