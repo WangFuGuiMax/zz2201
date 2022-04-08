@@ -1,0 +1,265 @@
+header {
+  width: 100%;
+  background-color: #e3e4e5;
+  height: 35px;
+}
+
+.head1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.head1>span {
+  line-height: 35px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.head1>span>a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.head1>span>a:hover {
+  color: #f30213;
+}
+
+.head1>div {
+  float: right;
+  width: 740px;
+}
+
+.head1>div li {
+  float: left;
+  font-size: 12px;
+  border-right: 1px solid #cccccc;
+  margin-top: 10px;
+}
+
+.head1>div li>div {
+  padding: 0 8px;
+}
+
+.head1>div li>div>a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.head1>div li>div>a:hover {
+  color: #f30213;
+}
+
+.head1>div li>div span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.head1>div li:nth-of-type(1) {
+  border-right: none;
+}
+
+.head1>div li:nth-child(9) {
+  border-right: none;
+}
+
+.head1>div li:nth-child(10) {
+  border-right: none;
+}
+
+.head1>div li:nth-of-type(1)>div {
+  padding: 0 0;
+}
+
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+nav>div {
+  float: left;
+}
+
+nav>div:nth-of-type(1)>a {
+  display: inline-block;
+  width: 213px;
+  height: 54px;
+  margin-top: 22px;
+  background-repeat: no-repeat;
+  background-image: url(../img/log.png);
+}
+
+.nav1 {
+  width: 137px;
+  height: 100px;
+  position: relative;
+}
+
+nav>div:nth-of-type(2)>span:nth-of-type(1) {
+  width: 17px;
+  height: 26px;
+  background-image: url(../img/log.png);
+  background-position: 0 -56px;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+
+.nav1>div {
+  position: absolute;
+  left: 65px;
+  top: 40px;
+  color: #c91523;
+  font-size: 14px;
+  width: 65px;
+  text-align: right;
+  border-bottom: 2px solid #c91523;
+}
+
+.nav1>div>span:nth-of-type(2) {
+  background-image: url(../img/log.png);
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 7px;
+  display: inline-block;
+  background-position: -19px -56px;
+  margin-left: 8px;
+  transition-property: all;
+  transition-duration: .1s;
+}
+
+.nav1>div:hover>span:nth-of-type(2) {
+  transform: rotate(180deg);
+}
+
+.nav2 {
+  height: 100px;
+  position: relative;
+}
+
+.nav2>div {
+  float: left;
+}
+
+.nav2>div:nth-of-type(1) {
+  width: 450px;
+  height: 40px;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 90px;
+}
+
+.nav2>div:nth-of-type(1)>input {
+  outline: none;
+  border: 2px solid #ffa133;
+  width: 370px;
+  height: 36px;
+  text-indent: 5px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.nav2>div:nth-of-type(1)>button {
+  display: inline-block;
+  border: none;
+  width: 76px;
+  height: 36px;
+  background-color: #ffa133;
+  color: white;
+  position: absolute;
+  font-size: 16px;
+}
+
+.nav2>div:nth-of-type(2) {
+  width: 140px;
+  height: 34px;
+  border: 1px solid #DFDFDF;
+  padding: 0 28px 0 19px;
+  background: #F9F9F9;
+  line-height: 34px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav2>div:nth-of-type(2)>span {
+  display: inline-block;
+  background-image: url(../img/gouwuche.png);
+  top: 9px;
+  left: 100px;
+  width: 16px;
+  height: 16px;
+  background: url(//misc.360buyimg.com/jdf/1.0.0/unit/shoppingcart/5.0.0/i/settleup-@1x.png) no-repeat;
+  background-size: 16px 16px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.nav2>div:nth-of-type(2)>i {
+  position: absolute;
+  top: 7px;
+  left: 115px;
+  display: inline-block;
+  padding: 1px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -1px;
+  color: #fff;
+  background-color: #da1026;
+  border-radius: 7px;
+  min-width: 14px;
+  font-family: tahoma, arial;
+  text-align: center;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.nav2>div:nth-of-type(2)>a{
+    text-decoration: none;
+    color: #f30213;
+    font-size: 12px;
+}
+.nav2>div:nth-of-type(3) {
+  width: 130px;
+  height: 34px;
+  border: 1px solid #DFDFDF;
+  background: #F9F9F9;
+  line-height: 34px;
+  margin-top: 30px;
+  position: relative;
+  padding-left:40px;
+}
+.nav2>div:nth-of-type(3)>a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+}
+.nav2>div:nth-of-type(3)>span {
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/erweima.png);
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.nav2>div:nth-of-type(4) {
+  position: absolute;
+  top: 70px;
+  left: 90px;
+}
+
+.nav2>div:nth-of-type(4)>ul>li {
+  float: left;
+  margin-right: 15px;
+}
+
+.nav2>div:nth-of-type(4)>ul>li>a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.nav2>div:nth-of-type(4)>ul>li>a:hover {
+  color: #f30213;
+}
