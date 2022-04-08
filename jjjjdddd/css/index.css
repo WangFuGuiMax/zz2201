@@ -3,55 +3,146 @@ header {
   background-color: #e3e4e5;
   height: 35px;
 }
+
 .head1 {
   width: 1200px;
   margin: 0 auto;
 }
-.head1>span{
+
+.head1>span {
   line-height: 35px;
   color: #999999;
   font-size: 12px;
 }
-.head1>span>a{
+
+.head1>span>a {
   color: #999999;
   text-decoration: none;
 }
-.head1>span>a:hover{
+
+.head1>span>a:hover {
   color: #f30213;
 }
+
 .head1>div {
   float: right;
   width: 740px;
 }
+
 .head1>div li {
   float: left;
   font-size: 12px;
   border-right: 1px solid #cccccc;
   margin-top: 10px;
 }
-.head1>div li>div{
+
+.head1>div li>div {
   padding: 0 8px;
 }
-.head1>div li>div>a{
+
+.head1>div li>div>a {
   color: #999999;
   text-decoration: none;
 }
-.head1>div li>div>a:hover{
+
+.head1>div li>div>a:hover {
   color: #f30213;
 }
-.head1>div li>div span{
+
+.head1>div li>div span {
   display: inline-block;
   margin-left: 5px;
 }
-.head1>div li:nth-of-type(1){
+
+.head1>div li:nth-of-type(1) {
   border-right: none;
 }
-.head1>div li:nth-child(9){
+
+.head1>div li:nth-child(9) {
   border-right: none;
 }
-.head1>div li:nth-child(10){
+
+.head1>div li:nth-child(10) {
   border-right: none;
 }
-.head1>div li:nth-of-type(1)>div{
+
+.head1>div li:nth-of-type(1)>div {
   padding: 0 0;
+}
+
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #cccccc;
+}
+
+nav>div {
+  float: left;
+}
+
+nav>div:nth-of-type(1)>a {
+  display: inline-block;
+  width: 213px;
+  height: 54px;
+  margin-top: 22px;
+  background-repeat: no-repeat;
+  background-image: url(../img/log.png);
+}
+
+.nav1 {
+  width: 137px;
+  height: 100px;
+  position: relative;
+}
+
+nav>div:nth-of-type(2)>span:nth-of-type(1) {
+  width: 17px;
+  height: 26px;
+  background-image: url(../img/log.png);
+  background-position: 0 -56px;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+
+.nav1>div {
+  position: absolute;
+  left: 65px;
+  top: 40px;
+  color: #f30213;
+  font-size: 12px;
+  width: 65px;
+  text-align: right;
+  border-bottom: 2px solid #f30213;
+}
+
+.nav1>div>span>span {
+  margin-left: 10px;
+}
+
+.nav2>div {
+  float: left;
+}
+
+.nav2>div:nth-of-type(1) {
+  width: 450px;
+  height: 40px;
+  text-align: right;
+}
+
+.nav2>div:nth-of-type(1)>input {
+  outline: none;
+  border: 2px solid #ffa133;
+  width: 370px;
+  height: 36px;
+}
+
+.nav2>div:nth-of-type(1)>button {
+  display: inline-block;
+  border: none;
+  width: 76px;
+  height: 36px;
+  background-color: #ffa133;
+  color: white;
 }
