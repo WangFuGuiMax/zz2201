@@ -1,1 +1,32 @@
-$bordershi:10px;
+.box1 {
+  width: 1200px;
+  margin: 0 auto;
+  
+  li {
+    float: left;
+    &:nth-child(6) {
+      border-right: none;
+    }
+    div {
+      padding: 0 8px;
+      a {
+        color: #999999;
+        text-decoration: none;
+
+      }
+      &:hover>a {
+        color: #f30213;
+      }
+    }
+  }
+
+}
+.xiaoming1{
+  display: inline-block;
+  width: 190px;
+  height: 33px;
+  background-color: #ffa133;
+  color: white;
+  font-size: 14px;
+  text-indent: 1em;
+}
