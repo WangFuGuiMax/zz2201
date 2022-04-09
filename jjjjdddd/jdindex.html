@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/jdindex.css">
+  <link rel="stylesheet" href="swiper8/swiper-bundle.css">
+
 </head>
 
 <body>
@@ -68,8 +70,8 @@
     </div>
     <div class="nav2">
       <div>
-          <input type="text" placeholder="食品">
-          <button>搜索</button>
+        <input type="text" placeholder="食品">
+        <button>搜索</button>
       </div>
       <div>
         <a href="">我的购物车</a>
@@ -79,7 +81,7 @@
       <div>
         <span></span>
         <a href="">扫码享受优惠</a>
-        
+
       </div>
       <div>
         <ul>
@@ -93,20 +95,192 @@
     </div>
   </nav>
   <div class="box1">
-    <span class="xiaoming1">京东超市频道分类</span>
+    <span class="xiaoming1" style="float: left;">京东超市频道分类</span>
     <ul>
-      <li><div><a href="">超市首页</a></div></li>
-      <li><div><a href="">超市量贩</a></div></li>
-      <li><div><a href="">京东生鲜</a></div></li>
-      <li><div><a href="">品牌特卖</a></div></li>
-      <li><div><a href="">山姆会员店</a></div></li>
-      <li><div><a href="">企业采购</a></div></li>
+      <li>
+        <div><a href="" style="color: #ffa133;">超市首页</a></div>
+      </li>
+      <li>
+        <div><a href="">超市量贩</a></div>
+      </li>
+      <li>
+        <div><a href="">京东生鲜</a></div>
+      </li>
+      <li>
+        <div><a href="">品牌特卖</a></div>
+      </li>
+      <li>
+        <div><a href="">山姆会员店</a></div>
+      </li>
+      <li>
+        <div style="border: none;"><a href="">企业采购</a></div>
+      </li>
     </ul>
-    <span class="xiaoming2">满99免运费</span>
-    <span class="xiaoming3">100%渠道保证</span>
+    <span class="xiaoming3"><i></i> <span>100%渠道保证</span> </span>
+    <span class="xiaoming2"><i></i> <span>满99免运费</span> </span>
   </div>
-  <script>
+  <div class="box2">
+    <div class="box21">
+      <ul>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+        <li>
+          <h4>食品饮料</h4>
+          <a href="">休闲食品</a>
+          <a href="">牛奶</a>
+          <a href="">饮料</a>
+          <span class="glyphicon glyphicon-menu-right"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="d">
+      <ul class="nox">
+        <li><img src="img/1.webp" alt=""></li>
+        <li><img src="img/2.webp" alt=""></li>
+        <li><img src="img/3.webp" alt=""></li>
+        <li><img src="img/1.webp" alt=""></li>
+        <li><img src="img/2.webp" alt=""></li>
+        <li><img src="img/3.webp" alt=""></li>
+      </ul>
+      <div class="wodiu">
+        <span class="wodiu1">&lt;</span>
+        <span class="wodiu2">&gt;</span>
+      </div>
+      <ul class="quan">
+        <li class="hongse">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+    </div>
 
+    <div>
+    </div>
+  </div>
+  <script src="js/startMove.js"></script>
+  <script>
+    let span1 = document.querySelector(".wodiu1");
+    let span2 = document.querySelector(".wodiu2");
+    let odiv = document.querySelector(".d");
+    let nox = document.querySelector(".nox")
+    let li = nox.children;
+    let Img = document.querySelectorAll("img");
+    let yuan = document.querySelector(".quan").children;
+    var j = 0;
+    function move() {
+      j++;
+      for (var i = 0; i < li.length; i++) {
+
+        startMove(li[i], {
+          opacity: 0
+        })
+      }
+
+      for (let j = 0; j < yuan.length; j++) {
+        yuan[j].className = "";
+      }
+      if (j == -1) {
+        j = li.length - 1;
+      }
+      if (j == li.length) {
+        yuan[0].className = "hongse"; //当出现最后一个区块（补的那个），第一个小圆点应当点亮
+      } else {
+        yuan[j].className = "hongse";
+      }
+      if (j == li.length) {
+        j = 0;
+      }
+
+
+      startMove(li[j], {
+        opacity: 100
+      })
+    }
+    var timer = setInterval(function () {
+      move();
+    }, 2000);
+    //鼠标移入事件
+    odiv.onmouseover = function () {
+      clearInterval(timer);
+    }
+    //鼠标移出事件
+    odiv.onmouseout = function () {
+      timer = setInterval(function () {
+        move();
+      }, 2000);
+    }
+    //鼠标点击事件
+    span1.onclick = function () {
+      j -= 2;
+      move();
+    }
+    span2.onclick = function () {
+      move();
+    }
+    // 小圈圈点击事件
+    for (let e = 0; e < yuan.length; e++) {
+
+      yuan[e].onclick = function () {
+        j = e - 1;
+        move();
+      }
+    }
   </script>
 </body>
 

@@ -16,7 +16,7 @@ gulp.task("copyjs", done => {
   done();
 })
 gulp.task("copyimg", done => {
-  gulp.src("img/*.{jpg,png}").pipe(gulp.dest("dist/img")).pipe(connect.reload());
+  gulp.src("img/*.{jpg,png,webp}").pipe(gulp.dest("dist/img")).pipe(connect.reload());
   done();
 })
 gulp.task("sass", done => {
@@ -41,7 +41,7 @@ gulp.task("watch", done => {
   gulp.watch("*.html", gulp.series("copyHtml"));
   gulp.watch("css/*.css", gulp.series("copycsan"));
   gulp.watch("js/*.js", gulp.series("copyjs"));
-  gulp.watch("img/*.{png,jpg}", gulp.series("copyimg"));
+  gulp.watch("img/*.{png,jpg,webp}", gulp.series("copyimg"));
   gulp.watch("sass/*.scss", gulp.series("sass"));
   done();
 })
