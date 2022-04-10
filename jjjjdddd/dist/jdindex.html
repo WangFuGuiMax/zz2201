@@ -71,9 +71,10 @@
       </div>
       <div class="nav2">
         <div>
-          <input type="text" placeholder="食品">
+          <input type="text" placeholder="食品" id="sousuo">
           <button>搜索</button>
         </div>
+        <ul class="jieguo"></ul>
         <div>
           <a href="">我的购物车</a>
           <span></span>
@@ -123,7 +124,6 @@
       <span class="xiaoming2"><i></i> <span>满99免运费</span> </span>
     </div>
   </div>
-
   <div class="box2">
     <div class="box21">
       <ul>
@@ -246,12 +246,80 @@
       <img src="img/4.webp" alt="">
       <img src="img/5.webp" alt="">
     </div>
-
-
-
-
-
-
+  </div>
+  <div class="diaoyong">
+    <h4>超值量贩</h4>
+  </div>
+  <div class="box3">
+    <ul>
+      <li>
+        <img src="img/8.webp" alt="">
+        <a href="">外婆心 重庆小面 166g*5份 非油炸重庆麻辣小面 重庆特产</a>
+        <div> <span></span> 量贩价 : ￥33.90</div>
+        <p><span></span> 加入购物车</p>
+      </li>
+      <li>
+        <img src="img/8.webp" alt="">
+        <a href="">外婆心 重庆小面 166g*5份 非油炸重庆麻辣小面 重庆特产</a>
+        <div> <span></span>量贩价 : ￥33.90</div>
+        <p><span></span> 加入购物车</p>
+        <em>超值量贩定制款</em>
+      </li>
+      <li style="margin-right:0">
+        <img src="img/8.webp" alt="">
+        <a href="">外婆心 重庆小面 166g*5份 非油炸重庆麻辣小面 重庆特产</a>
+        <div> <span></span>量贩价 : ￥33.90</div>
+        <p><span></span> 加入购物车</p>
+        <em>超值量贩定制款</em>
+      </li>
+    </ul>
+  </div>
+  <div class="box4">
+    <ul>
+      <li>
+        <img src="img/9.webp" alt="">
+        <a href="">同道大叔&暖友41度联名天秤座热敷蒸汽眼罩缓解疲劳10片</a>
+        <span>10片装</span>
+        <p>￥79.00</p>
+        <i><em></em></i>
+        <b></b>
+      </li>
+      <li>
+        <img src="img/9.webp" alt="">
+        <a href="">同道大叔&暖友41度联名天秤座热敷蒸汽眼罩缓解疲劳10片</a>
+        <span>10片装</span>
+        <p>￥79.00</p>
+        <i><em></em></i>
+      </li>
+      <li>
+        <img src="img/9.webp" alt="">
+        <a href="">同道大叔&暖友41度联名天秤座热敷蒸汽眼罩缓解疲劳10片</a>
+        <span>10片装</span>
+        <p>￥79.00</p>
+        <i><em></em></i>
+      </li>
+      <li>
+        <img src="img/9.webp" alt="">
+        <a href="">同道大叔&暖友41度联名天秤座热敷蒸汽眼罩缓解疲劳10片</a>
+        <span>10片装</span>
+        <p>￥79.00</p>
+        <i><em></em></i>
+      </li>
+      <li>
+        <img src="img/9.webp" alt="">
+        <a href="">同道大叔&暖友41度联名天秤座热敷蒸汽眼罩缓解疲劳10片</a>
+        <span>10片装</span>
+        <p>￥79.00</p>
+        <i><em></em></i>
+      </li>
+    </ul>
+    <a href="" class="tu1">
+      <img src="img/dd.png" alt="">
+    </a>
+    <div class="tu2"></div>
+  </div>
+  <div class="diaoyong">
+    <h4>热卖商品</h4>
   </div>
   <script src="swiper8/swiper-bundle.min.js"></script>
   <script src="js/startMove.js"></script>
@@ -333,6 +401,52 @@
       },
 
     });
+    let input = document.querySelector("#sousuo")
+    let oul = document.querySelector(".jieguo")
+    input.oninput = function () {
+      let script = document.createElement("script");
+      script.src = "https://suggest.taobao.com/sug?code=utf-8&q=" + input.value + "&_ksTS=1648115782130_210&callback=foo&k=1&area=c2c&bucketid=15"
+      document.body.appendChild(script)
+      document.body.removeChild(script)
+    }
+    function foo(da) {
+      result = da.result;
+      let ss = "";
+      result.forEach((item) => {
+        ss += `
+           <li>${item[0]}</li>`
+      });
+      oul.innerHTML = ss;
+      let aList = oul.children;
+      let magic = da.magic;
+      console.log(magic);
+      magic.forEach((item) => {
+        // aList[item.index - 1].innerHTML += "&gt";
+        aList[item.index - 1].onmouseover = function () {
+          // odiv.innerHTML = "";
+          let data = item.data;
+
+          data.forEach((item) => {
+            let oul = document.createElement("ul");
+            let str = "";
+
+            item.forEach((item) => {
+              if (item.type) {
+                str += `<li class="hot">${item.title}</li>`
+              } else {
+                str += `<li>${item.title}</li>`
+              }
+
+            });
+            oul.innerHTML = str;
+            // odiv.appendChild(oul)
+          });
+        };
+        // aList[item.index - 1].onmouseout = function () {
+        //   odiv.innerHTML = "";
+        // };
+      })
+    }
   </script>
 </body>
 

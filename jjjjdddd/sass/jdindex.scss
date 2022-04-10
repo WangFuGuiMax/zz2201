@@ -1,3 +1,23 @@
+.jieguo {
+  position: absolute;
+  top: 65px;
+  left: 90px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  z-index: 99;
+
+  li {
+    list-style: none;
+    line-height: 30px;
+    width: 300px;
+
+    &:hover {
+      background-color: #ffdfc6;
+      cursor: pointer;
+    }
+  }
+}
+
 //层级选择器
 .xiaoming1 {
   display: inline-block;
@@ -289,8 +309,242 @@
 
     a {
       color: white;
-        text-decoration: none;
-        font-size: 18px;
+      text-decoration: none;
+      font-size: 18px;
     }
   }
+}
+
+.diaoyong {
+  height: 70px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../img/ping.png) repeat-x 0 32px;
+
+  h4 {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 70px;
+    background-color: #f6f6f6;
+    padding: 0 60px;
+  }
+}
+
+.box3 {
+  height: 250px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  li {
+    float: left;
+    width: 390px;
+    height: 250px;
+    margin-right: 15px;
+    background-color: white;
+    position: relative;
+
+    a {
+      width: 158px;
+      position: absolute;
+      font-size: 12px;
+      color: #333333;
+      text-decoration: none;
+      top: 70px;
+      right: 40px;
+
+      &:hover {
+        color: #ffc36e;
+      }
+    }
+
+    div {
+      width: 230px;
+      background-color: #f75f3c;
+      text-align: center;
+      height: 60px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      line-height: 60px;
+      font-size: 18px;
+      color: white;
+
+      span {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top: 5px solid #fff;
+        border-left: 5px solid #fff;
+        overflow: hidden;
+      }
+    }
+
+    p {
+      width: 160px;
+      background-color: #ffa133;
+      text-align: center;
+      height: 60px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      line-height: 60px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+
+      span {
+        background-image: url(../img/jl.png);
+        display: inline-block;
+        vertical-align: middle;
+        background-position: -21px -52px;
+        -moz-background-size: 118px 73px;
+        background-size: 118px 73px;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    em {
+      position: absolute;
+      font-style: normal;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #ffa133;
+      background-color: #fff5ea;
+      top: 138px;
+      left: 190px;
+      line-height: 20px;
+    }
+  }
+}
+
+.box4 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 260px;
+  position: relative;
+  margin-bottom: 20px;
+
+  li {
+    width: px;
+    height: 250px;
+    background: white;
+    position: relative;
+    float: left;
+    padding: 0 15px;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+
+    img {
+      display: block;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    a {
+      margin-top: 10px;
+      display: block;
+      width: 169px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-decoration: none;
+      color: #333333;
+
+      &:hover {
+        color: #ffa133;
+      }
+    }
+
+    span {
+      color: #666666;
+    }
+
+    p {
+      color: #ff002f;
+      font-size: 18px;
+      line-height: 50px;
+      font-weight: 700;
+      height: 50px;
+    }
+
+    i {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background-color: #ffa133;
+      right: 20px;
+      bottom: 10px;
+      cursor: pointer;
+
+      em {
+        position: absolute;
+        display: inline-block;
+        background-image: url(../img/jl.png);
+        vertical-align: middle;
+        background-position: -21px -52px;
+        -moz-background-size: 118px 73px;
+        background-size: 118px 73px;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        background-color: #ffa133;
+        top: 8px;
+        left: 6px;
+      }
+    }
+
+    b {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border: 10px dashed transparent;
+      overflow: hidden;
+      border-top: 10px solid #fe952d;
+      border-left: 10px solid #fe952d;
+    }
+  }
+}
+
+.tu1 {
+  position: relative;
+  z-index: 2;
+  float: right;
+  width: 200px;
+  height: 259px;
+
+  img {
+    margin-left: -20px;
+    min-width: 200px;
+    min-height: 259px;
+  }
+}
+
+.tu2 {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 990px;
+  height: 10px;
+  background: url(../img/ditiao.png) 0 0 no-repeat;
 }
