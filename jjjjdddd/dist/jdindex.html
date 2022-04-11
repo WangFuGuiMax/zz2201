@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="swiper8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/jdindex.css">
-
+  <link rel="stylesheet" href="css/meitichaxun.css">
 </head>
 
 <body style="background-color: #f6f6f6;">
@@ -247,7 +247,7 @@
       <img src="img/5.webp" alt="">
     </div>
   </div>
-  <div class="diaoyong">
+  <div class="diaoyong  content">
     <h4>超值量贩</h4>
   </div>
   <div class="box3">
@@ -318,7 +318,7 @@
     </a>
     <div class="tu2"></div>
   </div>
-  <div class="diaoyong">
+  <div class="diaoyong content">
     <h4>热卖商品</h4>
   </div>
   <div class="box5">
@@ -377,7 +377,7 @@
       <div class="swiper-button-prev wuliangye2"></div>
     </div>
   </div>
-  <div class="diaoyong">
+  <div class="diaoyong  content">
     <h4>奶制品</h4>
   </div>
   <div class="diaoyong1">
@@ -512,7 +512,7 @@
       </ul>
     </div>
   </div>
-  <div class="diaoyong">
+  <div class="diaoyong  content">
     <h4>水饮冲调 </h4>
   </div>
   <div class="diaoyong1">
@@ -651,7 +651,7 @@
 
 
   <!-- 第三个 -->
-  <div class="diaoyong">
+  <div class="diaoyong  content">
     <h4>粮油调味</h4>
   </div>
   <div class="diaoyong1">
@@ -785,8 +785,29 @@
       </ul>
     </div>
   </div>
+  <!-- 电梯 -->
+  <div id="floorNav">
+    <ul>
+      <li>超值量贩<span>超值量贩</span></li>
+      <li>热卖商品<span>热卖商品</span></li>
+      <li>奶制品<span>奶制品</span></li>
+      <li>水饮冲调<span>水饮冲调</span></li>
+      <li>粮油调味<span>粮油调味</span></li>
+      <li>猜你喜欢<span>猜你喜欢</span></li>
+      <li>TOP</li>
+    </ul>
+  </div>
+
+  <div id="header" class="diaoyong  content">
+    <h4>猜你喜欢</h4>
+  </div>
+  <bottom>
+    
+  </bottom>
+  <!-- 电梯完 -->
   <script src="swiper8/swiper-bundle.min.js"></script>
   <script src="js/startMove.js"></script>
+  <!-- 搜索接口和老轮播图 -->
   <script>
     let span1 = document.querySelector(".wodiu1");
     let span2 = document.querySelector(".wodiu2");
@@ -902,16 +923,23 @@
       })
     }
   </script>
+  <!-- 引入轮播图 -->
   <script>
     var swiper = new Swiper(".mySwiper1", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
-      autoplay: true,
+      // 手动滑动后不会自动滑动 解决方法
+      autoplay: {
+        disableOnInteraction: false,
+        delay: 2000,
+      },
+
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+
     });
     var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 6,
@@ -919,12 +947,42 @@
       slidesPerGroup: 6,
       loop: true,
       loopFillGroupWithBlank: true,
-      //autoplay: true,
+      autoplay: true,
 
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    });
+  </script>
+  <!-- 电梯 -->
+  <script>
+    window.onscroll = function () {
+      let st = $(this).scrollTop();
+      if (st >= 300) {
+        $("#floorNav").fadeIn();
+      } else {
+        $("#floorNav").fadeOut();
+      }
+      $(".content h4").each(function (index, item) {
+        if (st >= $(this).offset().top - $(this).outerHeight() / 2) {
+          $("#floorNav")
+            .find("li")
+            .eq(index)
+            .addClass("hover")
+            .siblings()
+            .removeClass("hover");
+        }
+      });
+    };
+    $("#floorNav li:not(:last)").click(function () {
+      let index = $(this).index();
+      //$(window).scrollTop($(".content h4").eq(index).offset().top);
+      let weizhi = $(".content h4").eq(index).offset().top;
+      $("body,html").stop().animate({ scrollTop: weizhi }, 300);
+    });
+    $("#floorNav li:last").click(function () {
+      $("body,html").stop().animate({ scrollTop: 0 }, 300);
     });
   </script>
 </body>

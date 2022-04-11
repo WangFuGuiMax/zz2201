@@ -1,0 +1,32 @@
+@media all and (max-width:1750px) {
+  #floorNav {
+    left: 160px;
+  }
+}
+@media all and (max-width:1700px) {
+  #floorNav {
+    left: 140px;
+  }
+}
+@media all and (max-width:1650px) {
+  #floorNav {
+    left: 120px;
+  }
+}
+@media all and (max-width:1600px) {
+  #floorNav {
+    left: 100px;
+  }
+}
+@media all and (max-width:1550px) {
+  #floorNav {
+    left: 80px;
+  }
+}
+@media all and (max-width:1500px) {
+  #floorNav {
+    left: 0px;
+  }
+}
+
+
