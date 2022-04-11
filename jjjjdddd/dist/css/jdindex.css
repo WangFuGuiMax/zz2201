@@ -403,6 +403,9 @@
   display: block;
   margin-top: 20px;
   margin-left: 20px;
+  position: relative;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .box4 li a {
   margin-top: 10px;
@@ -414,8 +417,12 @@
   text-decoration: none;
   color: #333333;
 }
-.box4 li a:hover {
+.box4 li:hover a {
   color: #ffa133;
+}
+.box4 li:hover img {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 .box4 li span {
   color: #666666;
@@ -494,5 +501,234 @@
   height: 260px;
   position: relative;
   margin-bottom: 20px;
+}
+.box5 .box51 {
+  height: 270px;
+  padding: 0 20px;
+  padding-top: 10px;
+  background-color: white;
+}
+.box5 .box51 span {
+  margin-top: 10px;
+  display: block;
+  width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #333333;
+}
+.box5 .box51 img {
+  width: 160px;
+  height: 160px;
+  border: 0;
+}
+.box5 .box51 p {
+  color: #ff002f;
+  bottom: 10px;
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+}
+.box5 .box51 .box511 {
+  display: block;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #ffa133;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.box5 .box51 .box511 em {
+  position: absolute;
+  display: inline-block;
+  background-image: url(../img/jl.png);
+  vertical-align: middle;
+  background-position: -21px -52px;
+  -moz-background-size: 118px 73px;
+  background-size: 118px 73px;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  background-color: #ffa133;
+  top: 23px;
+  left: 40px;
+}
+.box5 .box51 .box511 i {
+  font-style: normal;
+  font-size: 16px;
+}
+.box5 .box51:hover {
+  text-align: center;
+}
+.box5 .box51:hover span {
+  display: none;
+}
+.box5 .box51:hover .box511 {
+  transform: translateY(-60px);
+}
+.box5 .box51:hover p {
+  line-height: 40px;
+}
+
+.wuliangye1 {
+  width: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 140px;
+  background-color: #333333;
+  opacity: 0.3;
+  color: white;
+}
+
+.wuliangye2 {
+  width: 25px;
+  height: 55px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  background-color: #333333;
+  opacity: 0.4;
+  color: white;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.diaoyong1 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 485px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.diaoyong1 .diaoyong1img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.diaoyong1 .diaoyong11 {
+  width: 190px;
+  height: 165px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 10px 12px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.diaoyong1 .diaoyong11 a {
+  float: left;
+  width: 73px;
+  height: 24px;
+  margin: 0 5px 8px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.6);
+  background: hsla(0deg, 0%, 95%, 0.2);
+  overflow: hidden;
+  text-decoration: none;
+}
+.diaoyong1 .diaoyong12 {
+  float: right;
+  height: 485px;
+  width: 1010px;
+}
+.diaoyong1 .diaoyong12 li {
+  position: relative;
+  float: left;
+  width: 199px;
+  height: 242.5px;
+  overflow: hidden;
+  padding: 10px 15px 0;
+  border-left: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.diaoyong1 .diaoyong12 li img {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.diaoyong1 .diaoyong12 li p {
+  font-size: 12px;
+}
+.diaoyong1 .diaoyong12 li span {
+  display: block;
+  font-size: 16px;
+  color: #ff002f;
+  height: 50px;
+  line-height: 40px;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div1 {
+  position: absolute;
+  right: 10px;
+  bottom: 18px;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div1 em {
+  font-size: 12px;
+  font-style: normal;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div1 i {
+  display: inline-block;
+  background: url(../img/plus.png) 0 0 no-repeat;
+  width: 39px;
+  height: 12px;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div2 {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #ffa133;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div2 i {
+  font-style: normal;
+}
+.diaoyong1 .diaoyong12 li .diaoyong12div2 em {
+  position: absolute;
+  display: inline-block;
+  background-image: url(../img/jl.png);
+  vertical-align: middle;
+  background-position: -21px -52px;
+  -moz-background-size: 118px 73px;
+  background-size: 118px 73px;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  background-color: #ffa133;
+  top: 23px;
+  left: 40px;
+}
+.diaoyong1 .diaoyong12 li:hover p {
+  display: none;
+}
+.diaoyong1 .diaoyong12 li:hover .diaoyong12div2 {
+  transform: translateY(-60px);
+}
+.diaoyong1 .diaoyong12 li:hover span {
+  line-height: 0;
+}
+.diaoyong1 .diaoyong12 li:hover .diaoyong12div1 {
+  bottom: 71px;
 }
 /*# sourceMappingURL=jdindex.css.map */
