@@ -487,4 +487,12 @@
   height: 10px;
   background: url(../img/ditiao.png) 0 0 no-repeat;
 }
+
+.box5 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 260px;
+  position: relative;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=jdindex.css.map */
