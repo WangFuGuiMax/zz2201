@@ -734,6 +734,7 @@
     width: 1010px;
 
     li {
+      background-color: white;
       position: relative;
       float: left;
       width: 199px;
@@ -826,12 +827,111 @@
         .diaoyong12div2 {
           transform: translateY(-60px);
         }
-        span{
+
+        span {
           line-height: 0;
         }
-        .diaoyong12div1{
+
+        .diaoyong12div1 {
           bottom: 71px;
         }
+      }
+    }
+  }
+}
+
+.dibu {
+  width: 1200px;
+  margin: 0 auto;
+  
+
+  li {
+    background-color: white;
+    position: relative;
+    float: left;
+    width: 199px;
+    height: 242.5px;
+    overflow: hidden;
+    padding: 10px 15px 0;
+    border-left: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+
+    img {
+      display: block;
+      width: 130px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ff002f;
+      height: 50px;
+      line-height: 40px;
+    }
+
+    
+
+    .dibu2 {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      background: #ffa133;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all .2s;
+
+      i {
+        font-style: normal;
+      }
+
+      em {
+        position: absolute;
+        display: inline-block;
+        background-image: url(../img/jl.png);
+        vertical-align: middle;
+        background-position: -21px -52px;
+        -moz-background-size: 118px 73px;
+        background-size: 118px 73px;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        background-color: #ffa133;
+        top: 23px;
+        left: 40px;
+      }
+
+    }
+
+    &:hover {
+
+      p {
+        display: none;
+      }
+
+      .dibu2 {
+        transform: translateY(-60px);
+      }
+
+      span {
+        line-height: 0;
+        text-align: center;
+        
+      }
+
+      .dibu1 {
+        bottom: 71px;
       }
     }
   }
