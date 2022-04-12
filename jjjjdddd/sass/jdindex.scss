@@ -843,9 +843,10 @@
 .dibu {
   width: 1200px;
   margin: 0 auto;
-  
+
 
   li {
+
     background-color: white;
     position: relative;
     float: left;
@@ -876,7 +877,7 @@
       line-height: 40px;
     }
 
-    
+
 
     .dibu2 {
       position: absolute;
@@ -927,12 +928,178 @@
       span {
         line-height: 0;
         text-align: center;
-        
+
       }
 
       .dibu1 {
         bottom: 71px;
       }
+    }
+  }
+}
+
+.cebian {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9990;
+  width: 0;
+  height: 100%;
+
+  .cebianback {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    transition: right .3s ease-in-out 0s;
+
+    .cebian1 {
+      position: absolute;
+      top: 50%;
+      left: -29px;
+      width: 35px;
+      margin-top: -61px;
+
+      .cebian11 {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #7a6e6e;
+        border-radius: 3px 0 0 3px;
+
+        .tip {
+          background-image: url(../img/jinglingtu.png);
+          font-style: normal;
+          cursor: pointer;
+          display: inline-block;
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          width: 6px;
+          height: 6px;
+          background-position: -150px -150px;
+          z-index: 999;
+        }
+
+        .ico {
+          cursor: pointer;
+          font-style: normal;
+          background-image: url(../img/jinglingtu.png);
+          display: inline-block;
+          background-position: -88px -175px;
+          width: 34px;
+          height: 35px;
+          margin-left: 1px;
+          position: relative;
+          z-index: 2;
+          background-color: #7a6e6e;
+        }
+
+        .tabtxt {
+          font-style: normal;
+          width: 62px;
+          height: 35px;
+          line-height: 35px;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          font-family: 微软雅黑;
+          position: absolute;
+          z-index: 1;
+          left: 35px;
+          top: 0px;
+          background-color: rgb(122, 110, 110);
+          border-radius: 3px 0px 0px 3px;
+          transition: left 0.3s ease-in-out 0.1s;
+        }
+
+        &:hover {
+          .tabtxt {
+            left: -60px;
+            background-color: #c81623;
+          }
+
+          .tip {
+            display: none;
+          }
+
+          .ico {
+            background-color: #c81623;
+          }
+        }
+      }
+    }
+
+    .cebian2 {
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      left: -29px;
+
+      div {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #7a6e6e;
+        border-radius: 3px 0 0 3px;
+
+        a {
+          color: #666;
+          text-decoration: none;
+
+          .ico {
+            cursor: pointer;
+            font-style: normal;
+            background-image: url(../img/jinglingtu.png);
+            display: inline-block;
+            background-position: -50px -250px;
+            width: 34px;
+            height: 35px;
+            margin-left: 1px;
+            position: relative;
+            z-index: 2;
+            background-color: #7a6e6e;
+          }
+
+          .tabtxt {
+            font-style: normal;
+            width: 62px;
+            height: 35px;
+            line-height: 35px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 微软雅黑;
+            position: absolute;
+            z-index: 1;
+            left: 35px;
+            top: 0px;
+            background-color: rgb(122, 110, 110);
+            border-radius: 3px 0px 0px 3px;
+            transition: left 0.3s ease-in-out 0.1s;
+          }
+
+          &:hover {
+            .tabtxt {
+              left: -60px;
+              background-color: #c81623;
+            }
+
+            .tip {
+              display: none;
+            }
+
+            .ico {
+              background-color: #c81623;
+            }
+          }
+        }
+      }
+
     }
   }
 }

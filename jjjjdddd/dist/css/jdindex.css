@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .jieguo {
   position: absolute;
   top: 65px;
@@ -809,5 +810,149 @@
 }
 .dibu li:hover .dibu1 {
   bottom: 71px;
+}
+
+.cebian {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9990;
+  width: 0;
+  height: 100%;
+}
+.cebian .cebianback {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-right: 6px solid #7a6e6e;
+  transition: right 0.3s ease-in-out 0s;
+}
+.cebian .cebianback .cebian1 {
+  position: absolute;
+  top: 50%;
+  left: -29px;
+  width: 35px;
+  margin-top: -61px;
+}
+.cebian .cebianback .cebian1 .cebian11 {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  background-color: #7a6e6e;
+  border-radius: 3px 0 0 3px;
+}
+.cebian .cebianback .cebian1 .cebian11 .tip {
+  background-image: url(../img/jinglingtu.png);
+  font-style: normal;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  background-position: -150px -150px;
+  z-index: 999;
+}
+.cebian .cebianback .cebian1 .cebian11 .ico {
+  cursor: pointer;
+  font-style: normal;
+  background-image: url(../img/jinglingtu.png);
+  display: inline-block;
+  background-position: -88px -175px;
+  width: 34px;
+  height: 35px;
+  margin-left: 1px;
+  position: relative;
+  z-index: 2;
+  background-color: #7a6e6e;
+}
+.cebian .cebianback .cebian1 .cebian11 .tabtxt {
+  font-style: normal;
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 微软雅黑;
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  top: 0px;
+  background-color: rgb(122, 110, 110);
+  border-radius: 3px 0px 0px 3px;
+  transition: left 0.3s ease-in-out 0.1s;
+}
+.cebian .cebianback .cebian1 .cebian11:hover .tabtxt {
+  left: -60px;
+  background-color: #c81623;
+}
+.cebian .cebianback .cebian1 .cebian11:hover .tip {
+  display: none;
+}
+.cebian .cebianback .cebian1 .cebian11:hover .ico {
+  background-color: #c81623;
+}
+.cebian .cebianback .cebian2 {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  left: -29px;
+}
+.cebian .cebianback .cebian2 div {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  background-color: #7a6e6e;
+  border-radius: 3px 0 0 3px;
+}
+.cebian .cebianback .cebian2 div a {
+  color: #666;
+  text-decoration: none;
+}
+.cebian .cebianback .cebian2 div a .ico {
+  cursor: pointer;
+  font-style: normal;
+  background-image: url(../img/jinglingtu.png);
+  display: inline-block;
+  background-position: -50px -250px;
+  width: 34px;
+  height: 35px;
+  margin-left: 1px;
+  position: relative;
+  z-index: 2;
+  background-color: #7a6e6e;
+}
+.cebian .cebianback .cebian2 div a .tabtxt {
+  font-style: normal;
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 微软雅黑;
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  top: 0px;
+  background-color: rgb(122, 110, 110);
+  border-radius: 3px 0px 0px 3px;
+  transition: left 0.3s ease-in-out 0.1s;
+}
+.cebian .cebianback .cebian2 div a:hover .tabtxt {
+  left: -60px;
+  background-color: #c81623;
+}
+.cebian .cebianback .cebian2 div a:hover .tip {
+  display: none;
+}
+.cebian .cebianback .cebian2 div a:hover .ico {
+  background-color: #c81623;
 }
 /*# sourceMappingURL=jdindex.css.map */
