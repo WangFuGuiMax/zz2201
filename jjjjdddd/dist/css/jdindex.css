@@ -408,7 +408,7 @@
   transition: all;
   transition-duration: 0.2s;
 }
-.box4 li a {
+.box4 li .mingcheng {
   margin-top: 10px;
   display: block;
   width: 169px;
