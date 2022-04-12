@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+  商品名<input type="text" id="pname"><br>
+  商品图片地址<input type="text" id="pimg"><br>
+  商品价格<input type="text" id="pprice"><br>
+  商品介绍<input type="text" id="pdesc"><br>
+  <input type="button" value="提交" id="btn">
+  <script>
+    $("#btn").click(function () {
+      $.ajax({
+        type: "post",
+        url: "http://jx.xuzhixiang.top/ap/api/goods/goods-add.php",
+        data: {
+          pname: $("#pname").val(),
+          pimg: $("#pimg").val(),
+          pprice: $("#pprice").val(),
+          pdesc: $("#pdesc").val(),
+        },
+        dataType: "json",
+        success: function (response) {
+          console.log(response);
+        }
+      });
+    })
+  </script>
+
+</body>
+
+</html>

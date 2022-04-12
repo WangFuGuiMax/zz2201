@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="../js/jquery-1.11.3.js"></script>
 </head>
+
 <body>
-  注册
+  <h1>注册</h1>
+  <a href="login.html">已有账号？ 请登录</a>
+  <br>
+  用户名:<input type="text" id="username">
+  密 码:<input type="password" id="password">
+  <input type="button" value="注册" id="btn">
 </body>
+<script>
+  $(function () {
+    $("#btn").click(function () {
+      $.ajax({
+        type: "get",
+        url: "http://jx.xuzhixiang.top/ap/api/reg.php",
+        data: {
+          username: $("#username").val(),
+          password: $("#password").val(),
+        },
+        dataType: "json",
+        success: function (response) {
+          if (response.code == 1) {
+            alert("注册成功")
+            window.location.href = 'login.html'
+          } else {
+            alert("用户名已存在")
+          }
+          console.log(response);
+
+
+        }
+      });
+    })
+  })
+</script>
+
 </html>
