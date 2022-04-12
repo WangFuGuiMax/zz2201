@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+  height: 120px;
+  background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg) repeat-x left bottom;
+}
+
+.box {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100px;
+  position: relative;
+}
+.box img {
+  float: left;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.box h1 {
+  float: left;
+  margin-top: 50px;
+}
+.box a {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  color: #e4393c;
+  text-decoration: none;
+}
+
+.box1 {
+  width: 990px;
+  height: 475px;
+  margin: 0 auto;
+  position: relative;
+}
+.box1 div {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box1 div #username {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 20px;
+  top: 20px;
+  outline: none;
+  text-indent: 10px;
+}
+.box1 div #password {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 20px;
+  top: 90px;
+  outline: none;
+  text-indent: 10px;
+}
+.box1 div #btn {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 20px;
+  top: 170px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  background-color: #e4393c;
+  text-indent: 10px;
+  border: none;
+}
+.box1 div .yanz1 {
+  position: absolute;
+  font-size: 12px;
+  color: #726f6f;
+  left: 20px;
+  top: 68px;
+}
+.box1 div .yanz2 {
+  position: absolute;
+  font-size: 12px;
+  color: #726f6f;
+  left: 20px;
+  top: 140px;
+}
+/*# sourceMappingURL=zhuce.css.map */

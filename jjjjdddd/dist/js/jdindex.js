@@ -60,49 +60,67 @@ $.ajax({
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //调用商品列表接口 渲染页面  12条
-let ostr = "";
-$.ajax({
-  type: "get",
-  url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=107244",
+// let ostr = "";
+// $.ajax({
+//   type: "get",
+//   url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=107244",
 
-  dataType: "json",
-  success: function (response) {
-    if (response) {
-      let uid = localStorage.getItem("userId")
-      if (uid == null) {
-        $.each(response.data, function (index, item) {
-          ostr = `
-           <div class="swiper-slide box51">
-            <img src="${item.pimg}" alt="">
-            <span>${item.pname}</span>
-           <p>￥${item.pprice}</p>
-           <div class="box511"><em></em><i>加入购物车</i></div>
-         </div>
-         `
-          if (index == 12) {
-            return false;
-          }
-          $(".guolaibani").prepend(ostr);
-        })
-      } else {
-        $.each(response.data, function (index, item) {
-          ostr = `
-           <div class="swiper-slide box51">
-            <img src="${item.pimg}" alt="">
-            <span>${item.pname}</span>
-           <p>￥${item.pprice}</p>
-           <div class="box511"><em></em><i>加入购物车</i></div>
-         </div>
-         `
+//   dataType: "json",
+//   success: function (response) {
+//     if (response) {
+//       let uid = localStorage.getItem("userId")
+//       if (uid == null) {
+//         $.each(response.data, function (index, item) {
+//           ostr = `
+//            <div class="swiper-slide box51">
+//             <img src="${item.pimg}" alt="">
+//             <span>${item.pname}</span>
+//            <p>￥${item.pprice}</p>
+//            <div class="box511"><em></em><i>加入购物车</i></div>
+//          </div>
+//          `
+//           if (index == 12) {
+//             return false;
+//           }
+//           $(".guolaibani").prepend(ostr);
+//         })
+//       } else {
+//         $.each(response.data, function (index, item) {
+//           ostr = `
+//            <div class="swiper-slide box51">
+//             <img src="${item.pimg}" alt="">
+//             <span>${item.pname}</span>
+//            <p>￥${item.pprice}</p>
+//            <div class="box511"><em></em><i>加入购物车</i></div>
+//          </div>
+//          `
          
-          if (index == 12) {
-            return false;
-          }
-          $(".guolaibani").prepend(ostr);
-        })
-      }
+//           if (index == 12) {
+//             return false;
+//           }
+//           $(".guolaibani").prepend(ostr);
+//         })
+//       }
 
-    }
-  }
-});
+//     }
+//   }
+// });

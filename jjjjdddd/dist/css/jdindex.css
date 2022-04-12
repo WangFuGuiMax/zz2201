@@ -509,6 +509,9 @@
   padding-top: 10px;
   background-color: white;
 }
+.box5 .box51:hover {
+  box-shadow: 0 0 10px rgba(4, 0, 0, 0.1);
+}
 .box5 .box51 span {
   margin-top: 10px;
   display: block;
