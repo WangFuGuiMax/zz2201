@@ -7,6 +7,10 @@ gulp.task("copyHtml", done => {
   gulp.src("*.html").pipe(gulp.dest("dist")).pipe(connect.reload());
   done();
 })
+gulp.task("copylistHtml", done => {
+  gulp.src("html/*.html").pipe(gulp.dest("dist/html")).pipe(connect.reload());
+  done();
+})
 gulp.task("copycsan", done => {
   gulp.src("css/*.css").pipe(gulp.dest("dist/css")).pipe(connect.reload());
   done();
@@ -39,6 +43,7 @@ gulp.task("server", done => {
 })
 gulp.task("watch", done => {
   gulp.watch("*.html", gulp.series("copyHtml"));
+  gulp.watch("html/*.html", gulp.series("copylistHtml"));
   gulp.watch("css/*.css", gulp.series("copycsan"));
   gulp.watch("js/*.js", gulp.series("copyjs"));
   gulp.watch("img/*.{png,jpg,webp}", gulp.series("copyimg"));
